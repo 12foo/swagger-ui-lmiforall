@@ -82,7 +82,7 @@
 .swagger-section pre .vhdl .attribute,
 .swagger-section pre .clojure .attribute,
 .swagger-section pre .coffeescript .property {
-  color: #8888ff;
+  color: #88F;
 }
 .swagger-section pre .keyword,
 .swagger-section pre .id,
@@ -679,6 +679,10 @@
 .swagger-section .swagger-ui-wrap ul#resources li.resource div.heading h2 a:hover {
   color: black;
 }
+.swagger-section .swagger-ui-wrap ul#resources li.resource ul.endpoints div.summary {
+  padding: 1em;
+  color: #444444;
+}
 .swagger-section .swagger-ui-wrap ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation {
   float: none;
   clear: both;
@@ -1219,16 +1223,17 @@
   cursor: pointer;
 }
 .swagger-section #header {
-  background-color: #89bf04;
-  padding: 14px;
+  background-color: #ffffff;
+  padding: 22px 14px;
+  border-bottom: 1px solid #555555;
 }
 .swagger-section #header a#logo {
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
   background: transparent url(../images/logo_small.png) no-repeat left center;
-  padding: 20px 0 20px 40px;
-  color: white;
+  padding: 20px 0 20px 140px;
+  color: #555555;
 }
 .swagger-section #header form#api_selector {
   display: block;
@@ -1242,6 +1247,7 @@
   margin: 0 10px 0 0;
 }
 .swagger-section #header form#api_selector .input input#input_apiKey {
+  display: none;
   width: 200px;
 }
 .swagger-section #header form#api_selector .input input#input_baseUrl {
@@ -1254,7 +1260,7 @@
   padding: 6px 8px;
   font-size: 0.9em;
   color: white;
-  background-color: #547f00;
+  background-color: #555555;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
